@@ -4,7 +4,6 @@
 #include <arpa/inet.h>
 #include <sys/socket.h>
 #include <net/if.h>
-#include <sys/types.h>
 #include <sys/ioctl.h>
 #include <netinet/in.h>
 #include <sys/types.h>
@@ -21,8 +20,8 @@ int mainmenu(){
   char choose;
   system("clear");
   printf("\n");
-  printf("[\e[0;94mi\e[0m] Added a bunch useful functions\n");
-  printf("Version: \e[0;95m♦\e[0m 1\e[0;93m.\e[0m1\e[0;93m.\e[0m0 \e[0;95m♦\e[0m\n");
+  printf("[\e[0;94mi\e[0m] Fixxed option menu\n");
+  printf("Version: \e[0;95m♦\e[0m 1\e[0;93m.\e[0m2\e[0;93m.\e[0m0 \e[0;95m♦\e[0m\n");
   printf("\e[0;95m►\e[0m Made by TT0xicc(.sbs) \e[0;95m◄\e[0m\n");
   printf("\n");
   printf("[1] Block ICMP\n");
@@ -168,7 +167,7 @@ if(option == 1){
         else if(option == 6){
             system("clear");
             system("rm -rf multi");
-            system("wget https://example.com/multi");
+            system("wget --no-verbose https://example.com/multi");
             system("chmod +x multi");
             printf("\n[\e[0;95m-\e[0m] Done. Restarting script\n");
             sleep(3);
