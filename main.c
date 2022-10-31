@@ -1,5 +1,6 @@
 // Goofy ahhh script made by TT0xicc
 // Just compile dis shit & run
+// gcc main.c -o multi
 #include <arpa/inet.h>
 #include <sys/socket.h>
 #include <net/if.h>
